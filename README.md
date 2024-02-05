@@ -1,3 +1,29 @@
+# Vegova School Adventure Game
+
+This code consists of a Python script and a batch script that together create an adventure game set in Vegova School. The player navigates different locations within the school and performs tasks.
+
+## Python Script
+
+### Functions:
+- **`jug()`:** Represents the south area of the school where the player can interact with a ball in the gym.
+- **`sever()`:** Represents the north area of the school where the player interacts with the sports teacher to return the ball.
+- **`vzhod()`:** Represents the east area of the school where the player finds a piece of chalk on the table.
+- **`zahod()`:** Represents the west area of the school where the player helps the electronics teacher find his chalk.
+
+The script begins with a welcome message and prompts the player to explore Vegova and complete tasks based on the input directions (S, Z, V, J).
+
+## Batch Script
+
+### Main Functionality:
+- The batch script prompts the player with instructions to use S, Z, V, J for directions.
+- It utilizes variables to track whether the player has picked up the ball (`x`) or the chalk (`y`).
+- The player navigates through different areas of the school and interacts with objects and characters based on their choices.
+- The script ensures proper input handling and guides the player through the game loop until completion.
+
+## Note
+The combination of the Python and batch scripts creates an interactive adventure game experience for players to enjoy the challenges and tasks within Vegova School.
+
+
 # Python-Terminal-Game
 
 ```py
