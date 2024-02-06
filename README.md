@@ -85,6 +85,7 @@ else:
 
 @echo off
 setlocal enabledelayedexpansion
+title IGRA
 
 echo Pozdravljen na Vegovi
 echo Uporabi S Z V J
