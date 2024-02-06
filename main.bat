@@ -3,7 +3,7 @@
 setlocal enabledelayedexpansion
 
 echo Pozdravljen na Vegovi
-echo Uporabi S Z V J
+echo Uporabi S /n Z /n V /n J
 set x=False
 set y=False
 
@@ -14,17 +14,17 @@ echo End of the game.
 exit /b 0
 
 :jug
-echo Si na jugu. Si v telovadnici šole.
+echo Nahajas se na jugu. Si v telovadnici sole.
 echo O poglej žoga (pritisni E do jo pobereš)
 set /p vnos="Vnos: "
 if /i "!vnos!" equ "J" (
-    set /p vnos="Si že na jugu. Ponovno vnesi smer! /n Vnos: "
+    set /p vnos="Si ze na jugu. Ponovno vnesi smer! /n Vnos: "
     if /i "!vnos!" equ "J" goto jug
 )
 
 if /i "!vnos!" equ "E" (
     set x=True
-    echo Pobral si žogo!
+    echo Pobral si zogo!
     goto vnos_check
 ) else (
     goto vnos_check
@@ -32,22 +32,22 @@ if /i "!vnos!" equ "E" (
 
 
 :sever
-echo Si na severu šole! Tu je profesor športne vzgoje!
-echo Želi najti svojo žogo!
+echo Si na severu sole! Tu je profesor sportne vzgoje!
+echo Zeli najti svojo zogo!
 set /p vnos="Vnesi E če imaš žogo! /n Vnos: "
 if /i "!vnos!" equ "E" (
     if !x! equ True (
         echo Profesorju si vrnil žogo! Lepo od tebe!
     ) else (
-        echo Nimaš žoge!
+        echo Nimas zoge!
     )
 )
 goto vnos_check
 
 :vzhod
-echo Si na vzhodu šole!
+echo Si na vzhodu sole!
 echo Poglej na mizi je Cin!
-set /p vnos="Pritisni E da pobereš cin /n Vnos: "
+set /p vnos="Pritisni E da poberes cin /n Vnos: "
 if /i "!vnos!" equ "E" (
     set y=True
     echo Pobral si cin!
@@ -55,7 +55,7 @@ if /i "!vnos!" equ "E" (
 goto vnos_check
 
 :zahod
-echo Si na zahodu šole!
+echo Si na zahodni strani sole!
 echo Profesor elektornike je izgubil svoj cin!
 set /p vnos="Vnesi E če imaš Cin /n Vnos: "
 if /i "!vnos!" equ "E" (
