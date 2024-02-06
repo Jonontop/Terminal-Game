@@ -3,7 +3,11 @@
 setlocal enabledelayedexpansion
 
 echo Pozdravljen na Vegovi
-echo Uporabi S /n Z /n V /n J
+echo Uporabi 
+echo S - Sever
+echo Z - Zahod
+echo V - Vzhod
+echo J - Jug
 set x=False
 set y=False
 
